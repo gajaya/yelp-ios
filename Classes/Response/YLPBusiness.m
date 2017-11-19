@@ -34,6 +34,7 @@
         YLPCoordinate *coordinate = [self.class coordinateFromJSONDictionary:businessDict[@"coordinates"]];
         _location = [[YLPLocation alloc] initWithDictionary:businessDict[@"location"] coordinate:coordinate];
         _photos = [businessDict ylp_objectMaybeNullForKey:@"photos"];
+        _distance = [businessDict[@"distance"] doubleValue];
     }
     return self;
 }

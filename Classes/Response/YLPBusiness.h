@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) YLPLocation *location;
 
 @property (nonatomic, readonly, copy) NSArray *photos;
+@property (nonatomic, readonly) double distance;
 
 @end
 
